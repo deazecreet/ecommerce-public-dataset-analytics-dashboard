@@ -57,7 +57,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 # Memuat data
-order_payments_df = load_data('cleaned_ecommerce_dataset/order_payments_df.csv')
+order_payments_df = load_data('dashboard/cleaned_ecommerce_dataset/order_payments_df.csv')
 
 st.subheader('Average Payment Value per Payment Type')
 
@@ -104,8 +104,8 @@ def load_data(file_paths):
 
 # Memuat data
 file_paths = {
-    'order_items': 'cleaned_ecommerce_dataset/order_items_df.csv',
-    'products': 'cleaned_ecommerce_dataset/products_df.csv'
+    'order_items': 'dashboard/cleaned_ecommerce_dataset/order_items_df.csv',
+    'products': 'dashboard/cleaned_ecommerce_dataset/products_df.csv'
 }
 merged_df = load_data(file_paths)
 
@@ -146,9 +146,9 @@ def load_data(file_paths):
 
 # Memuat data
 file_paths = {
-    'order_reviews': 'cleaned_ecommerce_dataset/order_reviews_df.csv',
-    'orders': 'cleaned_ecommerce_dataset/orders_df.csv',
-    'customers': 'cleaned_ecommerce_dataset/customers_df.csv'
+    'order_reviews': 'dashboard/cleaned_ecommerce_dataset/order_reviews_df.csv',
+    'orders': 'dashboard/cleaned_ecommerce_dataset/orders_df.csv',
+    'customers': 'dashboard/cleaned_ecommerce_dataset/customers_df.csv'
 }
 order_reviews_df, orders_df, customers_df = load_data(file_paths)
 
@@ -192,7 +192,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 # Memuat data
-order_payments_df = load_data('cleaned_ecommerce_dataset/order_payments_df.csv')
+order_payments_df = load_data('dashboard/cleaned_ecommerce_dataset/order_payments_df.csv')
 
 st.subheader('Distribution of Payment Methods')
 
@@ -236,11 +236,11 @@ def load_data(file_paths):
 
 # Memuat data
 file_paths = {
-    'order_reviews': 'cleaned_ecommerce_dataset/order_reviews_df.csv',
-    'orders': 'cleaned_ecommerce_dataset/orders_df.csv',
-    'customers': 'cleaned_ecommerce_dataset/customers_df.csv',
-    'order_items': 'cleaned_ecommerce_dataset/order_items_df.csv',
-    'products': 'cleaned_ecommerce_dataset/products_df.csv'
+    'order_reviews': 'dashboard/cleaned_ecommerce_dataset/order_reviews_df.csv',
+    'orders': 'dashboard/cleaned_ecommerce_dataset/orders_df.csv',
+    'customers': 'dashboard/cleaned_ecommerce_dataset/customers_df.csv',
+    'order_items': 'dashboard/cleaned_ecommerce_dataset/order_items_df.csv',
+    'products': 'dashboard/cleaned_ecommerce_dataset/products_df.csv'
 }
 order_reviews_df, orders_df, customers_df, order_items_df, products_df = load_data(file_paths)
 
@@ -308,7 +308,7 @@ def load_data(file_path):
     return df
 
 # Memuat data
-orders_df = load_data('cleaned_ecommerce_dataset/orders_df.csv')
+orders_df = load_data('dashboard/cleaned_ecommerce_dataset/orders_df.csv')
 
 st.subheader("Monthly Sales Trend")
 
@@ -338,7 +338,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 # Memuat data
-customers_df = load_data('cleaned_ecommerce_dataset/customers_df.csv')
+customers_df = load_data('dashboard/cleaned_ecommerce_dataset/customers_df.csv')
 
 st.subheader('Top Customers by State')
 
@@ -376,7 +376,7 @@ def load_data(file_path):
     return df
 
 # Memuat data ulasan
-order_reviews_df = load_data('cleaned_ecommerce_dataset/order_reviews_df.csv')
+order_reviews_df = load_data('dashboard/cleaned_ecommerce_dataset/order_reviews_df.csv')
 
 st.subheader('Distribution of Selected Review Scores')
 
@@ -415,7 +415,7 @@ def load_data(file_path):
     return pd.read_csv(file_path)
 
 # Memuat data penjual
-sellers_df = load_data('cleaned_ecommerce_dataset/sellers_df.csv')
+sellers_df = load_data('dashboard/cleaned_ecommerce_dataset/sellers_df.csv')
 
 st.subheader('Top Sellers by State')
 
@@ -450,8 +450,8 @@ st.pyplot(fig)
 # RFM Analysis
 @st.cache_data()
 def load_data():
-    orders_df = pd.read_csv('cleaned_ecommerce_dataset/orders_df.csv')
-    order_payments_df = pd.read_csv('cleaned_ecommerce_dataset/order_payments_df.csv')
+    orders_df = pd.read_csv('dashboard/cleaned_ecommerce_dataset/orders_df.csv')
+    order_payments_df = pd.read_csv('dashboard/cleaned_ecommerce_dataset/order_payments_df.csv')
     orders_df['order_purchase_timestamp'] = pd.to_datetime(orders_df['order_purchase_timestamp'])
     return orders_df, order_payments_df
 
