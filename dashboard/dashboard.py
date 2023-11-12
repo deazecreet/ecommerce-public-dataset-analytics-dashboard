@@ -10,7 +10,7 @@ st.sidebar.markdown("Selamat datang di Dashboard Analitik E-Commerce Public Data
 st.sidebar.caption('Made by Azel Rizki Nasution')
 
 # 1
-orders_df = pd.read_csv('cleaned_ecommerce_dataset/orders_df.csv')
+orders_df = pd.read_csv('dashboard/cleaned_ecommerce_dataset/orders_df.csv')
 
 # Konversi kolom tanggal ke datetime
 orders_df['order_delivered_customer_date'] = pd.to_datetime(orders_df['order_delivered_customer_date'])
