@@ -1,5 +1,3 @@
----
-
 # E-Commerce Public Dataset Analytics Dashboard
 
 ## Library Requirements
@@ -23,5 +21,3 @@ pip install streamlit pandas matplotlib seaborn
 ```
 streamlit run dashboard.py
 ```
-
----

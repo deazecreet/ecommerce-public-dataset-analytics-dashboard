@@ -201,7 +201,7 @@ order_payments_df = load_data('cleaned_ecommerce_dataset/order_payments_df.csv')
 st.subheader('Distribution of Payment Methods')
 
 # Checkbox untuk memilih tipe pembayaran
-payment_types = [i for i in order_payments_df['payment_type'].unique() if i != "not_defined"]
+payment_types = order_payments_df['payment_type'].unique()
 selected_payment_types = st.multiselect('Pilih Tipe Pembayaran', payment_types, default=payment_types,
                                         key="unique_key_for_payment_types_section_5")
 
