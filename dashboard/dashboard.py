@@ -2,13 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
-from PIL import Image
-
-logo_path = "E-Commerce Logo.png"
-logo = Image.open(logo_path)
 
 # Pengaturan Sidebar
-st.sidebar.image(logo, use_column_width=True)
+st.sidebar.image('E-Commerce_Logo.png', use_column_width=True)
 st.sidebar.title("E-Commerce Public Dataset Dashboard")
 st.sidebar.markdown("Selamat datang di Dashboard Analitik E-Commerce Public Dataset!")
 st.sidebar.caption('Made by Azel Rizki Nasution')
