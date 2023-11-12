@@ -4,7 +4,7 @@ import seaborn as sns
 import streamlit as st
 
 # Pengaturan Sidebar
-st.sidebar.image('E-Commerce_Logo.png', use_column_width=True)
+st.sidebar.image('ecommerce_logo.png', use_column_width=True)
 st.sidebar.title("E-Commerce Public Dataset Dashboard")
 st.sidebar.markdown("Selamat datang di Dashboard Analitik E-Commerce Public Dataset!")
 st.sidebar.caption('Made by Azel Rizki Nasution')
