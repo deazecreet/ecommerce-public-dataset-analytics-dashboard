@@ -21,3 +21,17 @@ pip install streamlit pandas matplotlib seaborn
 ```
 streamlit run dashboard.py
 ```
+
+## Link Dashboard Analytics Streamlit
+
+https://azelrn-ecommerce-analytics-dashboard.streamlit.app/
+
+## Contoh Screenshoot Dashboard Analytics Streamlit
+
+Contoh Screenshoot Awal
+
+![SS_Awal](SS_Awal.png)
+
+Contoh Screenshoot Akhir
+
+![SS Akhir](SS_Akhir.png)
