@@ -28,10 +28,10 @@ https://azelrn-ecommerce-analytics-dashboard.streamlit.app/
 
 ## Contoh Screenshoot Dashboard Analytics Streamlit
 
-Contoh Screenshoot Awal
+### Contoh Screenshoot Tampilan Awal
 
 ![SS_Awal](SS_Awal.png)
 
-Contoh Screenshoot Akhir
+### Contoh Screenshoot Tampilan Akhir
 
 ![SS Akhir](SS_Akhir.png)
