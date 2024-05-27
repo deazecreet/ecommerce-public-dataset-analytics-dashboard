@@ -1,4 +1,4 @@
-# E-Commerce Public Dataset Analytics Dashboard
+# E-Commerce Public Dataset Analysis Dashboard
 
 ## Library Requirements
 
